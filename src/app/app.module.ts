@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { HttpClientModule } from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -9,17 +9,10 @@ import { AppComponent } from './app.component';
 import { AuthGuard } from './shared';
 import { LanguageTranslationModule } from './shared/modules/language-translation/language-translation.module';
 
-@NgModule({
-    imports: [
-        CommonModule,
+@NgModule({ declarations: [AppComponent],
+    bootstrap: [AppComponent], imports: [CommonModule,
         BrowserModule,
         BrowserAnimationsModule,
-        HttpClientModule,
         LanguageTranslationModule,
-        AppRoutingModule
-    ],
-    declarations: [AppComponent],
-    providers: [AuthGuard],
-    bootstrap: [AppComponent]
-})
+        AppRoutingModule], providers: [AuthGuard, provideHttpClient(withInterceptorsFromDi())] })
 export class AppModule {}

@@ -4,6 +4,9 @@
 @import 'utils';
 @import 'rtl';
 @import 'responsive';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @media print {
     .breadcrumb {

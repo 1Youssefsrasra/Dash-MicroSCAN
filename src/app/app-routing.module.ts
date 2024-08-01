@@ -6,12 +6,13 @@ import { HomepageComponent } from './homepage/homepage.component';
 const routes: Routes = [
     {
         path: '',
-        component:HomepageComponent
+        component:HomepageComponent,
         //loadChildren: () => import('./layout/layout.module').then((m) => m.LayoutModule),
         //canActivate: [AuthGuard]
     },
     { path: 'login', loadChildren: () => import('./login/login.module').then((m) => m.LoginModule) },
     { path: 'signup', loadChildren: () => import('./signup/signup.module').then((m) => m.SignupModule) },
+    { path: 'dashboard', loadChildren: () => import('./layout/layout.module').then((m) => m.LayoutModule) },
     
     {
         path: 'error',
