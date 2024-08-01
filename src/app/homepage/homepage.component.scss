@@ -1,0 +1,295 @@
+.billboardlight{
+    width: 100%;
+    height: 600px;
+    position:relative;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    background-image: url("/assets/images/slider1.jpg");
+    background-size: cover;
+    background-position: center;
+   
+  /*  this is where the magic happens:  */
+    background-attachment: fixed;
+}
+
+.welcome{
+    position: absolute;
+    left: 7%;
+    top: 20%;
+    width: 500px;
+}
+
+.title{    
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+}
+.getStarted{
+    background-color: black;
+    color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    text-decoration: none;
+    border-radius: 7px;
+}
+
+h2, h1{
+    font-size: 40px;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.title2{
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+.row{  
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.card-group{
+    justify-content: center;
+    width: 40%;
+}
+
+
+#why-choose-us {
+    padding: 50px 0;
+    background-color: #cfcfcf67;
+   }
+ 
+   
+   .features {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   }
+   
+   .feature {
+    width: 30%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+   }
+   
+   .feature img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+   }
+   
+   .feature h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+   }
+   
+   .feature p {
+    font-size: 14px;
+    color: #666;
+   }
+
+
+   .card-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+    margin: 20px;
+   }
+   .card-bottom button{
+    background-color: black;
+    color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+   }
+   .card-bottom span{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    color: black;
+
+   }
+   #new-deals .row{
+    display: flex;
+    margin-top: 0;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    justify-content: center;
+   }
+   #new-deals a{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 7px;
+    text-decoration: none;
+    color: black;
+    margin-right: 100px;
+    font-size: 18px;
+   }
+
+   .path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 5s linear forwards;
+  }
+  
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+
+  .footer {
+    background-color: #C5D7FF;
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin: 20px;
+  }
+  .logo {
+    margin-top: -65px;
+    max-width: 250px;
+  }
+  
+  
+  .footer-section h3 {
+    color: black;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .footer-section p, .footer-section a {
+    color: black;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .footer-section a {
+    position: relative;
+    transition: color 0.3s;
+  }
+  
+  .footer-section a:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #95B1E8;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .footer-section a:hover {
+    color: #95B1E8;
+  }
+  
+  .footer-section a:hover:before {
+    visibility: visible;
+    width: 100%;
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: black;
+  }
+  
+  .footer .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer .footer-section p i {
+    margin-right: 10px;
+    color: black;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  
+  .contact-item i {
+    margin-right: 10px;
+    font-size: 1.1em;
+  }
+  
+  .contact-item a, .contact-item span {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+    display: inline-block;
+  }
+  
+  .social-media {
+    margin-top: 20px;
+  }
+  
+  .social-media .social-icon {
+    color: black;
+    font-size: 1.5em;
+    margin: 0 10px;
+    transition: color 0.3s;
+  }
+  
+  .social-media .social-icon:hover {
+    color: #95B1E8;
+  }
+  .footer-section.contact {
+    /* Ensures there is space for the social media section */
+    margin-bottom: 40px;
+  }
+  
+  .footer-section.contact .social-media {
+    display: flex;
+    justify-content: center; /* Center the icons horizontally */
+    margin-top: 20px; /* Add some space above the icons */
+  }
+  
+  .footer-section.contact .social-media .social-icon {
+    color: black; /* Default icon color */
+    font-size: 1.5em; /* Size of the icons */
+    margin: 0 15px; /* Spacing between icons */
+    transition: color 0.3s, transform 0.3s; /* Smooth transition for color and scale on hover */
+  }
+  
+  .footer-section.contact .social-media .social-icon:hover {
+    color: #95B1E8; /* Hover color */
+    transform: scale(1.1); /* Slightly enlarge icons on hover */
+  }
